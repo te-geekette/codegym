@@ -1,0 +1,547 @@
+/* Custom Styles for Code Gym 
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+[Table Of Contents]
+
+	01- NAVIGATION
+	02- MAIN
+	03- ABOUT
+	04- REGISTER
+	05- HOW IT WORKS
+	06- FOR WHOM
+	07- CONTACT
+	08- FOOTER
+	09- BODY
+*/
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+01 - Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navbar-default {
+  	background-color: #673AB7;
+  	border: none;
+  	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.07);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.07);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.07);
+}
+
+.navbar-default .navbar-brand {
+	color: #E6EFE9;
+	font-family: "Glegoo", serif; 
+	font-weight: 400;
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #8BC34A;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #E6EFE9;
+	font-weight: 300;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #8BC34A;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  	background-color: #8BC34A;
+  	color: #FFFFFF;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+02 - MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#main {
+	background-image: url("../images/hackers_back2.png");
+	/*background-color: #673AB7;*/
+	background-size: cover;
+/*	height: 680px;*/
+	width: 100%
+}
+
+#main .container {
+	padding-bottom: 30px;
+}
+
+#main .maintext {
+	margin-top: 15em;
+	padding-bottom: 30px;
+	margin-left: 7em;
+}
+
+#main h1 {
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 4.5em;
+  line-height: 1.2;
+/*  text-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+  margin-bottom: 0.5em;
+}
+
+#main p {
+  color: #D1C4E9;
+  font-weight: 300;
+  font-size: 1.33em;
+  line-height: 1.5;
+/*  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.73);*/
+  margin-bottom: 1.5em;	
+}
+
+#main a.btn-default {
+	color: #fbf9f8;
+	background-color: #8BC34A;
+	border-color: #8BC34A;
+	font-weight: 300;
+	border-radius: 0;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+}
+
+#main a.btn-default:focus {
+	color: #fbf9f8;
+	outline: none;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+03 - About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#about {
+	background-color: #FFFFFF;
+	padding: 8em 8em;
+	text-align: center;
+}
+
+#about p {
+	color: #727272;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 1.33em;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+04 - How it works
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#how-works {
+	/*background-color: #DEECCE;*/
+	/*background-color: rgba(139, 195, 74, 0.5);*/
+	background-color: rgba(195, 199, 191, 0.5);
+	padding: 8em 8em;
+	text-align: center;
+}
+
+#how-works p {
+	color: #5D6950;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 1.33em;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+#how-works h2 {
+	color: #263713;
+}
+
+#how-works h3 {
+	font-weight: 300;
+	color: #263713;
+	padding: 60px 0 20px 0; 
+	margin-top: 40px;
+}
+
+#how-works .steps_box {
+  background-color: #FFFFFF;
+  box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+  -webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+  -moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+  margin-top: 3em;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#how-works .box4-active {
+	background-color: #FFFFFF;
+}
+
+#how-works .steps_box p {
+	color: #636161;
+	font-size: 1.33em;
+	line-height: 1.5;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+}
+
+#how-works .steps_box h3 {
+	font-weight: 100;
+	font-size: 2.5em;
+	margin-bottom: 0;
+	margin-top: 15px;
+	padding: 0 40px 20px 40px; 
+	color: #FFFFFF;
+	text-align: left;
+	display: flex;
+  	align-items: flex-end;
+}
+
+#how-works .steps_box .glyph-lg {
+	color: #FFFFFF;
+	font-size: 1.5em;
+	text-align: left;
+	display: block;
+	/*padding-left: 40px;*/
+	padding-right: 15px;
+	/*margin-top: 100px;*/
+}
+
+
+	/*Transitions*/
+
+#how-works .steps_box #titlePlan, 
+#how-works .steps_box #titlePlaces,
+#how-works .steps_box #titleRegister, 
+#how-works .steps_box #titleMeet {
+	background-color: #673AB7;
+	height: 300px;
+	display: flex;
+  	align-items: flex-end;
+  	transition: all 0.3s ease-in-out;
+}
+
+#how-works .steps_box:hover #titlePlan, 
+#how-works .steps_box:hover #titlePlaces,
+#how-works .steps_box:hover #titleRegister, 
+#how-works .steps_box:hover #titleMeet {
+	transform: translateX(900px);
+	transition-delay: 0.2s;
+}
+
+#how-works .steps_box #textPlan, 
+#how-works .steps_box #textPlaces,
+#how-works .steps_box #textRegister, 
+#how-works .steps_box #textMeet  {
+	position: absolute;
+	height: 300px;
+	display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+	transform: translateX(-900px);
+    transition: all 0.4s ease-in-out;
+} 
+
+#how-works .steps_box:hover #textPlan, 
+#how-works .steps_box:hover #textPlaces,
+#how-works .steps_box:hover #textRegister, 
+#how-works .steps_box:hover #textMeet {
+	transform: translateX(0px);
+} 
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+05 - Register
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#register {
+	background-color: #FFFFFF;
+	padding: 8em 8em;
+	text-align: center;
+}
+
+#register .left {
+	border-right-color: #BEC3D4;
+	border-right-style: solid;
+	border-right-width: thin; 
+	padding-right: 30px;
+	padding-left: 0;
+}
+
+#register .nav .nav-pills {
+	text-align: center;
+}
+
+#register h3 {
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+#register p {
+	color: #727272;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 1.33em;
+	padding-bottom: 15px;
+}
+
+#register .joinHH {
+	border-color: #673AB7;
+	color: #673AB7;
+	border-radius: 0;
+	font-weight: 300;
+}
+
+#register .joinHH:hover {
+	background-color: #8BC34A;
+	border-color: #8BC34A;
+	color: #FFFFFF;
+
+}
+
+#register .joinCity {
+	border-color: #673AB7;
+	color: #673AB7;
+	border-radius: 0;
+	font-weight: 300;
+}
+
+#register .joinCity:hover {
+	background-color: #727272;
+	border-color: #727272;
+	color: #FFFFFF;
+
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+06 - For whom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#whom {
+	background-color: #673AB7;
+	padding: 8em 8em;
+	text-align: center;
+}
+
+#whom p {
+	color: #FFFFFF;
+	font-weight: 100;
+	line-height: 1.5;
+	font-size: 1.33em;
+}
+
+#whom .tab-pane p a {
+	color: #8BC34A;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 1.33em;
+}
+
+#whom ul li.btn-default {
+	background-color: transparent;
+	border-color: #FFFFFF ;
+	border-radius: 0;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+
+}
+
+#whom ul li.btn.active {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+#whom a {
+	text-decoration: none;
+}
+
+#whom ul li > a > h2{
+	margin: 0;
+	font-size: 1.1em;
+	font-weight: 100;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#whom ul li.btn.active > a > h2{
+	color: #512DA8;
+	font-weight: 400;
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+07 - Contact
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#contact {
+	padding: 4em 4em;
+	text-align: center;
+	background-image: url("../images/contact2.png");
+	background-size: cover;
+	width: 100%
+}
+
+#contact .container .box {
+	background-color: rgba(230, 239, 233, 0.7);
+	position: relative;
+/*	width: 800px;*/
+/*	min-height: 340px;*/
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+}
+
+#contact h2 {
+	margin: 0; 
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+#contact form {
+	text-align: left;
+	padding-bottom: 1.3em;
+}
+
+#contact form .btn-default {
+	border-radius: 0;
+	background-color: #8BC34A;
+	color: #212121;
+	border-color: transparent;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+08 - Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+	background-color: #212121;
+	padding-bottom: 20px;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+footer #brand {
+	color: #FFFFFF;
+	font-family: "Glegoo", serif; 
+	font-weight: 400;
+	font-size: 1.5em;
+	padding-left: 0;
+}
+
+footer .brandbox {
+	/*padding-left: 0;*/
+}
+
+footer #brand:hover {
+	color: #D1C4E9;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+footer .navbar-nav > li > a:hover {
+	background-color: transparent;
+	color: #D1C4E9;
+}
+
+footer ul.nav li a {
+	padding-top: 8px;
+	padding-bottom: 0;
+}
+
+footer .copy {
+	text-align: right;
+	color: #95a5a6;
+	padding-top: 8px;
+	font-weight: 100;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+09 - Body
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*html {
+  font-family: "Roboto", "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+*/
+body h2 {
+	color: #212121;
+	font-weight: 300;
+	margin-bottom: 1.3em;
+}
+
+code {
+	background-color: #8BC34A;
+	color: #FFFFFF;
+	border-radius: 0;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+}
+
+.brand-text {
+	font-family: "Glegoo", serif; 
+	font-weight: 700;
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+10 - Modals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.modal-content {
+	border-radius: 0; 
+}
+
+.modal-header {
+	background-color: #9FA2B2;
+}
+
+.modal-title {
+	font-weight: 300;
+}
+
+.modal-body p a {
+	color: #673AB7;
+}
+
+.modal-body p {
+	color: #3D315B;
+	margin-bottom: 2.5em;
+	margin-top: 1.2em; 
+}
+
+.modal-body label {
+	color: #3D315B;
+	font-weight: 700;
+}
+
+.modal-footer .btn-primary {
+	background-color: #8BC34A;
+	border-color: #8BC34A;
+	font-weight: 300;
+	border-radius: 0;
+}
+
+.modal-footer .btn-default {
+	font-weight: 300;
+	border-radius: 0;
+}
+
