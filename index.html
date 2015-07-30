@@ -190,29 +190,30 @@
     <div class="modal fade" id="modalHamburg" tabindex="-1" role="dialog" aria-labelledby="modalHamburg">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <form>
+          <form id="registerHamburg" target="_self" onsubmit="" action="">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Register for the next &lt;code:gym&gt; circle in <code>Hamburg</code></h4>
             </div>
             <div class="modal-body">
               <p>Please leave your name and email address and select the start date of the circle you want to participate in. You can learn more about how a <span class="brand-text">&lt;code:gym&gt;</span> circle works <a href="#how-works">here.</a></p>
-  
+              
               <div class="form-group">
                 <label for="mainRegisterName">Your name</label>
                 <input type="text" class="form-control" id="mainRegisterName" placeholder="Tell us your name">
               </div>
               <div class="form-group">
                 <label for="mainRegisterEmail">Your email</label>
-                <input type="text" class="form-control" id="mainRegisterEmail" placeholder="Tell us your email">
+                <input type="email" class="form-control" id="mainRegisterEmail" placeholder="Tell us your email">
               </div>
               <div class="form-group">
                 <label for="dateselector">Please select your start date</label>
                 <div class="selectContainer" id="dateselector">
-                  <select class="form-control">
-                    <option>12. August</option>
-                    <option>25. September</option>
-                    <option>10. Oktober</option>
+                  <select class="form-control" id="datesList">
+                    <option></option>
+                    <option>06. October 2015</option>
+                    <option>01. December 2015</option>
+                    <option>16. December 2015</option>
                   </select>
                 </div>
               </div> 
@@ -221,9 +222,13 @@
                 <textarea class="form-control" rows="3" id="mainRegisterComment" placeholder="Anything else you want to tell us?"></textarea>
               </div> 
             </div>
+            <div id="registerHamburgSuccess">
+              <h2>Welcome to <code>&lt;code:gym&gt;</code>!</h2>
+              <p>It's great to have you on board. We'll send you a message in the next days with further information. See you soon!</p>
+            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="buttonSubmit" type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
@@ -233,7 +238,7 @@
     <div class="modal fade" id="modalMyCity" tabindex="-1" role="dialog" aria-labelledby="modalMyCity">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <form>
+          <form id="registerCity" target="_self" onsubmit="" action="">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Where should we kick-off the next <code>&lt;code:gym&gt;</code> circle?</h4>
@@ -242,20 +247,20 @@
             <div class="modal-body">
               <p>Please leave your name, email address and the city where you would like to participate in a <span class="brand-text">&lt;code:gym&gt;</span> circle. Once we have enough requests for a city, we’ll get back to you with concrete dates and the option to register. You can learn more about how a <span class="brand-text">&lt;code:gym&gt;</span> circle works <a href="#how-works">here.</a></p>
               <div class="form-group">
-                <label for="mainRegisterName">Your name</label>
-                <input type="text" class="form-control" id="mainRegisterName" placeholder="Tell us your name">
+                <label for="cityRegisterName">Your name</label>
+                <input type="text" class="form-control" id="cityRegisterName" placeholder="Tell us your name">
               </div>
               <div class="form-group">
-                <label for="mainRegisterEmail">Your email</label>
-                <input type="text" class="form-control" id="mainRegisterEmail" placeholder="Tell us your email">
+                <label for="cityRegisterEmail">Your email</label>
+                <input type="text" class="form-control" id="cityRegisterEmail" placeholder="Tell us your email">
               </div>
               <div class="form-group">
-                <label for="mainRegisterCity">Your city</label>
-                <input type="text" class="form-control" id="mainRegisterEmail" placeholder="Where do you live?">
+                <label for="cityRegisterCity">Your city</label>
+                <input type="text" class="form-control" id="cityRegisterEmail" placeholder="Where do you live?">
               </div>
               <div class="form-group">
-                <label for="mainRegisterComment">Any comments?</label>
-                <textarea class="form-control" rows="3" id="mainRegisterComment" placeholder="Anything else you want to tell us?"></textarea>
+                <label for="cityRegisterComment">Any comments?</label>
+                <textarea class="form-control" rows="3" id="cityRegisterComment" placeholder="Anything else you want to tell us?"></textarea>
               </div>
             </div>
 

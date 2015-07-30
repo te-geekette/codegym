@@ -564,3 +564,12 @@ code {
 	border-radius: 0;
 }
 
+#registerHamburgSuccess {
+	padding: 30px 15px 30px 15px;
+	display: none
+}
+
+#registerHamburgSuccess p {
+	font-size: 1.1em;
+	line-height: 1.5;
+}
