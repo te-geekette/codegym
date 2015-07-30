@@ -3,10 +3,8 @@
 [Table Of Contents]
 
 	01- HOW IT WORKS
+	02 - CONTACT
 */
-
-
-$(document).ready(function() {
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 01 - HOW IT WORKS
@@ -38,6 +36,36 @@ $(document).ready(function() {
 	// });
 
 
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+02 - CONTACT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+function postContactToGoogle () {
+	var name = $('#contactName').val();
+	var email = $('#contactEmail').val();
+	var message = $('#contactMessage').val();
 
+	$.ajax({
+		url: "https://docs.google.com/forms/d/1O-h-OQazEgGn9lwf7kNYL-fpwT8c1AI_N0v7is4mttA/formResponse",
+		data: {'entry.212631191': name, 'entry.1381694881':email, 'entry.515619592': message, },
+		type: "POST",
+		dataType: "xml",
+		statusCode: {
+			0: function() {
+				$('#contact .box').toggle();
+				$('#boxSendSuccess').toggle();
+			},
+			200: function() {
+				$('#contact .box').toggle();
+				$('#boxSendFailure').toggle();
+			}
+		}
+	});
+}
+
+$(document).ready(function() {
+	$('#formContact').submit(function() {
+		postContactToGoogle();
+		return false;
+	})	
 });

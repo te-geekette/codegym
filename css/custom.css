@@ -416,6 +416,24 @@
 	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
 }
 
+#contact #boxSendSuccess {
+	background-color: rgba(230, 239, 233, 0.7);
+	padding: 1.3em 1.3em 2em 1.3em;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	display: none;
+}
+
+#contact #boxSendFailure {
+	background-color: rgba(230, 239, 233, 0.7);
+	padding: 1.3em 1.3em 2em 1.3em;
+	box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-webkit-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	-moz-box-shadow: -1px 10px 6px -4px rgba(0,0,0,0.14);
+	display: none;
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 08 - Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

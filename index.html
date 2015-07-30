@@ -61,7 +61,7 @@
         </ul>
       </div> <!-- .collape .navbar-collapse -->
     </div> <!-- .container-fluid -->
-  </nav>  
+  </nav> <!-- .nav -->
 
   <!-- MAIN
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -317,22 +317,28 @@
         <div class="box">
           <h2>Contact</h2>
           <p>Any further questions? Or do you want to discuss opportunities for companies and sponsors? Just leave us a message and we’ll get back to you as soon as possible.</p>
-          <form>
+          <form id="formContact" target="_self" onsubmit="" action="">
             <div class="form-group">
               <label class="sr-only" for="contactName">Your name</label>
               <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
             </div>
             <div class="form-group">
               <label class="sr-only" for="contactName">Your email</label>
-              <input type="email" class="form-control" id="contactName" placeholder="Enter your email address">
+              <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email address">
             </div>
             <div class="form-group">
               <label class="sr-only" for="contactName">Your message</label>
-              <textarea class="form-control" rows="3" id="contactName" placeholder="Leave us a message"></textarea>
+              <textarea class="form-control" rows="3" id="contactMessage" placeholder="Leave us a message"></textarea>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div> <!--  box -->
+        <div id="boxSendSuccess">
+          <h2>Thanks for your message! We'll get back to you shortly.</h2>
+        </div>
+        <div id="boxSendFailure">
+          <h2>Oops, something went wrong! Junior developer at work. Please reload and try again.</h2>
+        </div>  
       </div> <!--  col-md-8 col-md-offset-2 -->
     </div> <!-- container -->
   </div> <!-- contact -->
@@ -345,7 +351,7 @@
         <div class="col-md-10">
           <ul class="nav navbar-nav navbar-left">
             <li><a href="#imprint">IMPRINT</a></li>
-            <li class="copy">>Copyright 2015, &lt;code:gym&gt;. All Rights Reserved.</li>
+            <li class="copy">Copyright 2015, &lt;code:gym&gt;. All Rights Reserved.</li>
           </ul>
         </div>
         <div class="col-md-2" style="text-align:right">
