@@ -2,42 +2,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
 [Table Of Contents]
 
-	01- HOW IT WORKS
-	02 - CONTACT
+	01 - CONTACT
+	02 - HOW IT WORKS
 */
 
-/* –––––––––––––––––––––––––––––––––––––––––––––––
-01 - HOW IT WORKS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */	
-
-	/*Box 1 - Register */
-
-	// var worksRegisterTitle = $("#how-works #titleRegister");
-	// var worksRegisterText = $("#how-works #textRegister");
-	// var parentRegisterBox = worksRegisterTitle.parent('div');
-
-	// parentRegisterBox.hover(
-	// 	function(){
-	// 	worksRegisterText.toggle();
-	// 	worksRegisterTitle.toggle();
-	// 	parentRegisterBox.toggleClass('box1-active, box1');
-	// });
-
-	/*Box 2 - Plan */
-	
-	// var worksPlanTitle = $("#how-works #titlePlan");
-	// var worksPlanText = $("#how-works #textPlan");
-	// var parentBoxPlan = worksPlanTitle.parent('div');
-
-	// parentBoxPlan.click(function(){
-	// 	worksPlanText.toggle();
-	// 	worksPlanTitle.toggle();
-	// 	parentBoxPlan.toggleClass('box1-active, box2');
-	// });
-
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
-02 - CONTACT
+01 - CONTACT
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 function postContactToGoogle () {
@@ -101,5 +72,27 @@ $(document).ready(function() {
 	})	
 });
 
-
 // TODO: 1.) 200 function for HH Register Modal, 2.) My City Register Modal
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+02 - HOW IT WORKS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$('.box1').hover(function() {
+	$('.boxRegister').toggleClass("flipped");
+})
+
+$('.box2').hover(function() {
+	$('.boxPlan').toggleClass("flipped");
+})
+
+$('.box3').hover(function() {
+	$('.boxMeet').toggleClass("flipped");
+})
+
+$('.box4').hover(function() {
+	$('.boxPlaces').toggleClass("flipped");
+})
+
+
+
