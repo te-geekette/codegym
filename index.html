@@ -120,16 +120,6 @@
       </div>
       <div class="row">
         <div class="col-md-5 col-md-offset-1">
-
-<!--      <div class="steps_box box3">
-            <div id="titleMeet">             
-              <h3><span class="glyphicon glyphicon-repeat glyph-lg" aria-hidden="true"></span> Your circle meets twice a week - no excuses</h3>
-            </div>
-            <div id="textMeet">
-              <p>You can learn at your own pace and with your own goals. There is no need to rush. The important thing however is continuity. Therefore, your circle meets <code>twice a week</code> - no excuses! </p>
-            </div>
-          </div>  -->
-
           <div class="steps_box box3">
             <div class="boxMeet">             
               <h3 class="card front"><span class="glyphicon glyphicon-repeat glyph-lg" aria-hidden="true"></span> Your circle meets twice a week - no excuses</h3>
@@ -140,16 +130,6 @@
         </div> 
 
         <div class="col-md-5">
-          <!--  
-          <div class="steps_box box4">
-            <div id="titlePlaces">
-              <h3><span class="glyphicon glyphicon-ice-lolly-tasted glyph-lg" aria-hidden="true"></span>We meet in cozy places, not classrooms</h3>
-            </div>
-            <div id="textPlaces">    
-              <p><span class="brand-text">&lt;code:gym&gt;</span> is not a school. There is no teacher and no need to be quiet. Feed yourself with whatever you need, ask your peers if you're stuck and feel free to just <code>socialize</code> with the rest of the group if your brain needs a break. We want to help you enjoy pumping up your coding muscles.</p>
-            </div>
-          </div>
-          -->
           <div class="steps_box box4">
             <div class="boxPlaces">
               <h3 class="card front"><span class="glyphicon glyphicon-ice-lolly-tasted glyph-lg" aria-hidden="true"></span>We meet in cozy places, not classrooms</h3>
@@ -241,6 +221,10 @@
               <h2>Welcome to <code>&lt;code:gym&gt;</code>!</h2>
               <p>It's great to have you on board. We'll send you a message in the next days with further information. See you soon!</p>
             </div>
+            <div id="registerHamburgFailure">
+              <h2>Oops... Something went wrong.</h2>
+              <p>Junior developer at work, Sorry. Please reload and try again.</p>
+            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button id="buttonSubmit" type="submit" class="btn btn-primary">Submit</button>
@@ -271,7 +255,7 @@
               </div>
               <div class="form-group">
                 <label for="cityRegisterCity">Your city</label>
-                <input type="text" class="form-control" id="cityRegisterEmail" placeholder="Where do you live?">
+                <input type="text" class="form-control" id="cityRegisterCity" placeholder="Where do you live?">
               </div>
               <div class="form-group">
                 <label for="cityRegisterComment">Any comments?</label>
@@ -279,9 +263,18 @@
               </div>
             </div>
 
+            <div id="registerCitySuccess">
+              <h2>Thank you for your message!</h2>
+              <p>We'll collect all requests and plan our travel itinerary. When your city is on the list, we'll get back to you and update you about the dates. See you soon!</p>
+            </div>
+            <div id="registerCityFailure">
+              <h2>Oops... Something went wrong.</h2>
+              <p>Junior developer at work, Sorry. Please reload and try again.</p>
+            </div>
+
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="buttonSubmit" type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>

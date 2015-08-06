@@ -239,52 +239,6 @@
 	padding: 50px;
 }
 
-	/*Transitions*/ 
-/*
-#how-works .steps_box #titlePlan, 
-#how-works .steps_box #titlePlaces,
-#how-works .steps_box #titleRegister, 
-#how-works .steps_box #titleMeet {
-	background-color: #673AB7;
-	height: 300px;
-	display: flex;
-  	align-items: flex-end;
-  	transition: all 0.3s ease-in-out;
-}
-
-#how-works .steps_box:hover #titlePlan, 
-#how-works .steps_box:hover #titlePlaces,
-#how-works .steps_box:hover #titleRegister, 
-#how-works .steps_box:hover #titleMeet {
-	transform: translateX(900px);
-	transition-delay: 0.2s;
-}
-
-#how-works .steps_box #textPlan, 
-#how-works .steps_box #textPlaces,
-#how-works .steps_box #textRegister, 
-#how-works .steps_box #textMeet  {
-	position: absolute;
-	height: 300px;
-	display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
-	transform: translateX(-900px);
-    transition: all 0.4s ease-in-out;
-} 
-
-#how-works .steps_box:hover #textPlan, 
-#how-works .steps_box:hover #textPlaces,
-#how-works .steps_box:hover #textRegister, 
-#how-works .steps_box:hover #textMeet {
-	transform: translateX(0px);
-} */
-
-/**/
-
-
-
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 05 - Register
@@ -601,12 +555,20 @@ code {
 	border-radius: 0;
 }
 
-#registerHamburgSuccess {
+#registerHamburgSuccess,
+#registerHamburgFailure,
+#registerCitySuccess, 
+#registerCityFailure {
 	padding: 30px 15px 30px 15px;
-	display: none
+	display: none;
 }
 
-#registerHamburgSuccess p {
+#registerHamburgSuccess p,
+#registerHamburgFailure p,
+#registerCitySuccess p, 
+#registerCityFailure  {
 	font-size: 1.1em;
 	line-height: 1.5;
 }
+
+

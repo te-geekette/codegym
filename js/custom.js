@@ -54,15 +54,54 @@ function postRegisterHamburgToGoogle () {
 				$('#registerHamburgSuccess').toggle();
 			},
 			200: function() {
-				$('#registerHamburg').toggle();
+				$('#registerHamburg .modal-header').toggle();
+				$('#registerHamburg .modal-body').toggle();
+				$('#registerHamburg .modal-footer #buttonSubmit').attr("disabled", "disabled");
+				$('#registerHamburgFailure').toggle();
 			}
 		}
 	});
 }	
 
+function postRegisterMyCityToGoogle () {
+	var nameRegister = $('#registerCity #cityRegisterName').val();
+	var emailRegister = $('#registerCity #cityRegisterEmail').val();
+	var myCity = $('#registerCity #cityRegisterCity').val();
+	var messageRegister = $('#registerCity #cityRegisterComment').val();
+
+	$.ajax ({
+		url: "https://docs.google.com/forms/d/1qGeo_YHxjjnVUxgdaW4hvrYJV2Yngf04TFoHtYMJuf8/formResponse",
+		data: {'entry.275212063': nameRegister, 'entry.2018228417': emailRegister, 'entry.473071324': myCity, 'entry.1522915950': messageRegister},
+		type: 'POST',
+		dataType: 'xml',
+		statusCode: {
+			0: function () {
+				$('#registerCity .modal-header').toggle();
+				$('#registerCity .modal-body').toggle();
+				$('#registerCity .modal-footer #buttonSubmit').attr("disabled", "disabled");
+				$('#registerCitySuccess').toggle();
+			},
+			200: function (){
+				$('#registerCity .modal-header').toggle();
+				$('#registerCity .modal-body').toggle();
+				$('#registerCity .modal-footer #buttonSubmit').attr("disabled", "disabled");
+				$('#registerCityFailure').toggle();
+
+			}
+		}
+
+	});
+
+}
+
 $(document).ready(function() {
 	$('#registerHamburg').submit(function() {
 		postRegisterHamburgToGoogle();
+		return false;
+	})
+
+	$('#registerCity').submit(function() {
+		postRegisterMyCityToGoogle();
 		return false;
 	})
 
@@ -71,8 +110,6 @@ $(document).ready(function() {
 		return false;
 	})	
 });
-
-// TODO: 1.) 200 function for HH Register Modal, 2.) My City Register Modal
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 02 - HOW IT WORKS
