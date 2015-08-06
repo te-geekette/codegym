@@ -114,10 +114,16 @@ $(document).ready(function() {
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 02 - HOW IT WORKS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+if (window.matchMedia('(min-width: 768px)').matches){
+	$('.box1').hover(function() {
+		$('.boxRegister').toggleClass("flipped");
+	})
+} else {
+	$('.box1').click(function() {
+		$('.boxRegister').toggleClass("flipped");
+	})
+}
 
-$('.box1').hover(function() {
-	$('.boxRegister').toggleClass("flipped");
-})
 
 $('.box2').hover(function() {
 	$('.boxPlan').toggleClass("flipped");
