@@ -121,21 +121,45 @@ if (window.matchMedia('(min-width: 768px)').matches){
 } else {
 	$('.box1').click(function() {
 		$('.boxRegister').toggleClass("flipped");
+		$('.boxRegister .back').css("padding", "20px");
+	})
+}
+
+if (window.matchMedia('(min-width: 768px)').matches){
+	$('.box2').hover(function() {
+		$('.boxPlan').toggleClass("flipped");
+	})
+} else {
+	$('.box2').click(function() {
+		$('.boxPlan').toggleClass("flipped");
+		$('.boxPlan .back').css("padding", "20px");
+	})
+}
+
+if (window.matchMedia('(min-width: 768px)').matches){
+	$('.box3').hover(function() {
+		$('.boxMeet').toggleClass("flipped");
+	})
+} else {
+	$('.box3').click(function() {
+		$('.boxMeet').toggleClass("flipped");
+		$('.boxMeet .back').css("padding", "20px");
+	})
+}
+
+if (window.matchMedia('(min-width: 768px)').matches){
+	$('.box4').hover(function() {
+		$('.boxPlaces').toggleClass("flipped");
+	})
+} else {
+	$('.box4').click(function() {
+		$('.boxPlaces').toggleClass("flipped");
+		$('.boxPlaces .back').css("padding", "20px");
 	})
 }
 
 
-$('.box2').hover(function() {
-	$('.boxPlan').toggleClass("flipped");
-})
 
-$('.box3').hover(function() {
-	$('.boxMeet').toggleClass("flipped");
-})
-
-$('.box4').hover(function() {
-	$('.boxPlaces').toggleClass("flipped");
-})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 03 - SCROLLING
