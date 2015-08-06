@@ -235,6 +235,11 @@
 	-webkit-backface-visibility: hidden;
 }
 
+#how-works .card span {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
 #how-works .front {
 	background-color: #673AB7;
 	height: 100%;
