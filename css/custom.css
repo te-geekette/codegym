@@ -180,6 +180,8 @@
 	text-align: left;
 	display: flex;
   	align-items: flex-end;
+  	-webkit-display: flex;
+  	-webkit-align-items: flex-end;
 }
 
 #how-works .steps_box .glyph-lg {
@@ -213,6 +215,8 @@
 	-webkit-transform-origin: center;
 	display: flex;
 	align-items: center;
+	-webkit-display: flex;
+	-webkit-align-items: center;
 }
 
 #how-works .boxRegister.flipped,
