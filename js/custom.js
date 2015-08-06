@@ -119,6 +119,7 @@ if (window.matchMedia('(min-width: 768px)').matches){
 		$('.boxRegister').toggleClass("flipped");
 	})
 } else {
+	$('#how-works .steps_box .glyph-lg').css('font-size', '1em');
 	$('.box1').click(function() {
 		$('.boxRegister').toggleClass("flipped");
 		$('.boxRegister .back').css("padding", "20px");
