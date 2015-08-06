@@ -195,6 +195,7 @@
 #how-works .box3, 
 #how-works .box4 {
 	perspective: 800px;
+	-webkit-perspective: 800px;
 }
 
 #how-works .boxRegister,
@@ -207,6 +208,9 @@
 	transform-style: preserve-3d;
 	transition: transform 1s;
 	transform-origin: center;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: transform 1s;
+	-webkit-transform-origin: center;
 	display: flex;
 	align-items: center;
 }
@@ -216,6 +220,7 @@
 #how-works .boxPlaces.flipped,
 #how-works .boxMeet.flipped  {
 	transform: rotateY( 180deg );
+	-webkit-transform: rotateY( 180deg ); ;
 }
 
 #how-works .card {
@@ -223,6 +228,7 @@
 	position: absolute;
 	width: 100%
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 #how-works .front {
@@ -236,6 +242,7 @@
 	background-color: #FFFFFF;
 	height: 100%;
 	transform: rotateY( 180deg );
+	-webkit-transform: rotateY( 180deg );
 	padding: 50px;
 }
 
