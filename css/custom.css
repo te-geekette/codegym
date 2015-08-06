@@ -192,6 +192,13 @@
 	padding-right: 15px;
 }
 
+@media (max-width: 768px) {
+	#how-works .steps_box .glyph-lg {
+		display: none;
+	}
+
+}
+
 #how-works .box1,
 #how-works .box2,
 #how-works .box3, 
