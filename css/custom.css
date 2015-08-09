@@ -498,6 +498,10 @@ footer .copy {
 	font-weight: 100;
 }
 
+footer .navbar-nav >  li > a:mouseleft {
+	background-color: none;
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 09 - Body
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
